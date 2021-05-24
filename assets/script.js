@@ -19,9 +19,6 @@ function handleImgClick(event) {
   let leftPic = thumbnails[0];
   let rightPic = thumbnails[2];
 
-  console.log(leftPic);
-  console.log(rightPic);
-
   bigVersionImg.setAttribute('src', bigVersionSrc);
 
   for (let i = 0; i < thumbnails.length; i++) {
@@ -40,9 +37,6 @@ function handleImgClick(event) {
     rightPic = thumbnails[index + 1];
   }
 
-  console.log(leftPic);
-  console.log(rightPic);
-
   thumbnailCarousel.appendChild(leftPic);
   leftPic.setAttribute('style', 'display: block');
   thumbnailCarousel.appendChild(element);
@@ -53,9 +47,8 @@ function handleImgClick(event) {
 
 function displayFirstSet() {
   const firstImg = thumbnails[0];
-  const lastImg = thumbnails[thumbnails.length - 1];
   const secondImg = thumbnails[1];
-
+  const lastImg = thumbnails[thumbnails.length - 1];
   firstImg.setAttribute('style', 'display: block');
   secondImg.setAttribute('style', 'display: block');
   lastImg.setAttribute('style', 'display: block');
